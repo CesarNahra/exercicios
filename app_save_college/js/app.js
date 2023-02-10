@@ -58,9 +58,6 @@ const alunos = [
 
 console.log(alunos);
 
-
-
-
 function mediaIndividual() {
     for(let i = 0; i <= alunos.length - 1; i++) {
 
