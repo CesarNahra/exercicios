@@ -4,7 +4,7 @@ function ate10() {
     number++;
     console.log(number);
     if(number === 10) {
-        alert("Acabou o tempo");
+        alert("Seu tempo acabou!! Tente novamente!!");
         clearTimeout();
     }
 }
