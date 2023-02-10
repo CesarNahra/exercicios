@@ -58,9 +58,7 @@ const alunos = [
 
 console.log(alunos);
 
-// let mediaIndividual = (alunos[0].notas.nota1 + alunos[0].notas.nota2) / 2
 
-// console.log(mediaIndividual);
 
 
 function mediaIndividual() {
@@ -79,24 +77,3 @@ function mediaIndividual() {
 }
 
 mediaIndividual();
-
-
-// function estaAprovado() {
-//     if(alunos[i].nota < 7) {
-//         console.log("O aluno " + alunos[i].nome + " está reprovado!");
-//     } else if(alunos[i].nota)
-// }
-
-
-// let media = (alunos[0].portugues + alunos[1].portugues + alunos[2].portugues + alunos[3].portugues + alunos[4].portugues) / 5;
-// console.log(`A média da turma foi: ${media}`);
-
-// function professora (aluno, nota) {
-//     if(nota > 7) {
-//         return `${aluno} passou`
-//     } else {
-//         return `${aluno} não passou`
-//     }
-// }
-
-// console.log(professora(alunos[1].nome, alunos[1].portugues));
