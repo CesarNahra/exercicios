@@ -35,7 +35,7 @@ html {
     width: 100%;
 }
 
-.btn-submit {
+#btn-submit {
     padding: 10px 30px;
     text-transform: uppercase;
     color: #494080;
@@ -46,7 +46,7 @@ html {
     transition: .5s;
 }
 
-.btn-submit:hover {
+#btn-submit:hover {
     color: #ddd;
     background-color: #494080;
     border-color: #494080;

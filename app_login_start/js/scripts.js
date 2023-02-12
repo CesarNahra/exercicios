@@ -1,33 +1,15 @@
-const username = document.querySelector("#form-container #username");
-const password = document.querySelector("#form-container #pass");
-const btn = document.querySelector("#form-container .btn-submit");
+const inputName = document.getElementById("username");
+const inputPass = document.getElementById("pass");
 
-
-function enviarForm(event) {
+const user = {
+    name: "João",
+    pwd: 30,
 }
 
-// const person = {
-//     username: "",
-//     password: "",
-//     setUser: function(newUser) {
-//         this.username = username;
-//     },
-//     setPass: function(newPass) {
-//         this.password = newPass;
-//     },
-//     getUser: function() {
-//         return this.username;
-//     },
-//     getPass: function() {
-//         return this.password;
-//     },
-// }
+localStorage.setItem("pessoa", JSON.stringify(pessoa))
 
-const person = {
-    username: "",
-    password: "",
-}
+let pessoaString = localStorage.getItem("pessoa");
 
-let pessoaTexto = JSON.stringify(person);
+let pessoaObj = localStorage.parse(pessoaString)
 
-console.log(pessoaTexto);
+console.log(pessoaObj.nome);
