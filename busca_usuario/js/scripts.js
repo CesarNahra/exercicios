@@ -1,3 +1,5 @@
+var questionName = prompt("Qual o usuário você deseja buscar?");
+
 const users = [
     {
         name: "Scenic Stream",
@@ -29,6 +31,12 @@ const users = [
     }
 ]
 
-for(let i = 0; i < users.length; i++) {
-    console.log(`O usuário ${users[i].name} é dono do username ${users[i].username}`);
-}
+// for(let i = 0; i < users.length; i++) {
+//     console.log(`O usuário ${users[i].name} é dono do username ${users[i].username}`);
+// }
+
+let user = users.find(user => {
+    return user.name === questionName;
+})
+
+console.log(user);
