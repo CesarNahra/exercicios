@@ -1,15 +1,16 @@
-const inputName = document.getElementById("username");
-const inputPass = document.getElementById("pass");
+const username = document.querySelector("#form-container #username");
+const password = document.querySelector("#form-container #pass");
+const btn = document.querySelector("#form-container #btn-submit");
 
-const user = {
-    name: "João",
-    pwd: 30,
+
+btn.addEventListener("click", enviar);
+
+function enviar() {
+    const armazenaName = localStorage.setItem("usuario", username.value);
+    const armazenaPass = localStorage.setItem("pass", password.value);
+    
+
+    if(armazenaName === armazenaName && armazenaPass === armazenaPass) {
+        alert("logado");
+    } 
 }
-
-localStorage.setItem("pessoa", JSON.stringify(pessoa))
-
-let pessoaString = localStorage.getItem("pessoa");
-
-let pessoaObj = localStorage.parse(pessoaString)
-
-console.log(pessoaObj.nome);
