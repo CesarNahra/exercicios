@@ -1,0 +1,31 @@
+html {
+    font-family: helvetica, sans-serif;
+    background-color: #ddd;
+}
+
+.container {
+    max-width: 400px;
+    background-color: aqua;
+    position: relative;
+    margin: 50px auto;
+    padding: 20px 50px;
+    border-radius: 5px;
+}
+
+#main-content .photo {
+    height: 100px;
+    width: 100px;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+#main-content p {
+    margin-top: 50px;
+    font-style: italic;
+}
+
+#main-content .city {
+    position: absolute;
+    bottom: 23px;
+    right: 50px;
+}
