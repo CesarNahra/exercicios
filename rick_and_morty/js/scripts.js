@@ -1,10 +1,10 @@
-let charName = document.querySelector(".name");
-let charPhoto = document.querySelector(".photo");
-let charSituation = document.querySelector(".alive");
-let charCn = document.querySelector(".cityname");
-let charOn = document.querySelector(".originname");
-let charGender = document.querySelector(".type");
-let charSpecie = document.querySelector(".human");
+const charName = document.querySelector(".name");
+const charPhoto = document.querySelector(".photo");
+const charSituation = document.querySelector(".alive");
+const charCity = document.querySelector(".cityname");
+const charOrigin = document.querySelector(".originname");
+const charGender = document.querySelector(".type");
+const charSpecie = document.querySelector(".human");
 
 
 let url = "https://rickandmortyapi.com/api/character/1"
@@ -15,6 +15,6 @@ async function search() {
     console.log(data);
 }
 
-charGender.innerHTML = "oi";
+charGender.innerHTML = "Male";
 
 search();

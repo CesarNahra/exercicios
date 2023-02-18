@@ -22,12 +22,11 @@ html {
 }
 
 #main-content p {
+    font-weight: bold;
+    font-size: 20px;
+    width: 200px;
     margin-top: 50px;
     font-style: italic;
-}
-
-#main-content .city {
-    position: absolute;
-    bottom: 23px;
-    right: 50px;
+    background-color: #25d366;
+    padding: 10px;
 }
