@@ -8,6 +8,5 @@ function geraLink() {
     const link = `http://api.whatsapp.com/send?phone=${numero.value}&text=${msg.value}`;
 }
 
-geraLink();
 
 console.log(geraLink());
