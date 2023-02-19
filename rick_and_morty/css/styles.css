@@ -17,14 +17,6 @@ html {
     border-radius: 5px;
 }
 
-#main-content .photo {
-    background-position: center;
-    background-size: cover;
-    height: 100px;
-    width: 100px;
-    border: 1px solid red;
-    border-radius: 50%;
-}
 
 #main-content p {
     font-weight: bold;
