@@ -10,11 +10,11 @@ html {
 
 .container {
     max-width: 400px;
-    background-color: aqua;
+    background-color: #00ffff;
     position: relative;
     margin: 50px auto;
     padding: 20px 50px;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 
@@ -23,6 +23,8 @@ html {
     font-size: 20px;
     width: 200px;
     margin-top: 50px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
     font-style: italic;
     background-color: #25d366;
     padding: 10px;
