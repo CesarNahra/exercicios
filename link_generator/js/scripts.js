@@ -3,13 +3,12 @@ const msg = document.querySelector("form #msg");
 const button = document.querySelector("form #btn-submit");
 const link = `http://api.whatsapp.com/send?phone=${numero.value}&text=${msg.value}`;
 
-// localStorage.setItem("número", numero.value);
 
-// button.addEventListener("click", geraLink);
+button.addEventListener("click", geraLink);
 
-// function geraLink() {
-//     return link;
-// }
+function geraLink() {
+    
+}
 
 
-// console.log(geraLink());
+console.log(geraLink());
