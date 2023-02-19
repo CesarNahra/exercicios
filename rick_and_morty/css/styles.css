@@ -5,27 +5,35 @@
 
 html {
     font-family: "Get Schwifty", sans-serif;
-    background-color: #ddd;
+    background-color: #69c8ecff;
 }
 
 .container {
     max-width: 400px;
-    background-color: #00ffff;
+    background-color: #b7e4f9ff;
+    border: 2px solid #526e2dff;
     position: relative;
     margin: 50px auto;
     padding: 20px 50px;
     border-radius: 15px;
 }
 
+#main-content .name {
+    font-size: 40px;
+    padding: 10px;
+    background-color: #fae48bff;
+    border-radius: 15px;
+    border: 1px solid #526e2dff;
+}
 
 #main-content p {
     font-weight: bold;
     font-size: 20px;
     width: 200px;
     margin-top: 50px;
-    border: 1px solid #ccc;
+    border: 1px solid #526e2dff;
     border-radius: 15px;
     font-style: italic;
-    background-color: #25d366;
+    background-color: #fae48bff;
     padding: 10px;
 }
