@@ -1,25 +1,36 @@
 class CaixaRegistradora {
-    constructor(produto, qtd, valor) {
+    constructor(produto, qtd, total) {
         this.produto = produto;
         this.qtd = qtd;
-        this.valor = valor;
+        this.total = total;
     }
     addItem(produto) {
-        this.produto += produto;
+        this.produto.push(produto);
+
+        this.qtd += produto.qtd;
+        this.total += produto.preco * produto.qtd;
+    }
+    removeItem(produto) {
+        this.produto.pop();
+
+        this.qtd -= produto.qtd;
+        this.total -= produto.preco * produto.qtd;
     }
 }
 
 let carrinho = new CaixaRegistradora([
     {
         codigoBarras: 12345,
-        qtd: 1,
-        preco: 20,
-        nome: "Abacate"
+        nome: "Goiaba",
+        preco: 4.5,
+        qtd: 10,
     }
-], 1, 20);
+], 10, 4.5);
 
 console.log(carrinho);
 
-console.log(carrinho.produto);
+carrinho.addItem({codigoBarras: 65486, nome: "Banana", preco: 5, qtd: 5});
 
-console.log(carrinho.produto[0].codigoBarras);
+carrinho.removeItem();
+
+console.log(carrinho);
