@@ -1,36 +1,45 @@
-class CaixaRegistradora {
-    constructor(produto, qtd, total) {
-        this.produto = produto;
-        this.qtd = qtd;
-        this.total = total;
-    }
-    addItem(produto) {
-        this.produto.push(produto);
-
-        this.qtd += produto.qtd;
-        this.total += produto.preco * produto.qtd;
-    }
-    removeItem(produto) {
-        this.produto.pop();
-
-        this.qtd -= produto.qtd;
-        this.total -= produto.preco * produto.qtd;
+class Product {
+    constructor(name, price) {
+        this.name = name;
+        this.price = price;
     }
 }
 
-let carrinho = new CaixaRegistradora([
-    {
-        codigoBarras: 12345,
-        nome: "Goiaba",
-        preco: 4.5,
-        qtd: 10,
+class CashRegister {
+    constructor() {
+        this.products = [];
+        this.total = 0;
     }
-], 10, 4.5);
+    addProduct(product) {
+        this.products.push(product);
+        this.total += product.price;
+    }
+    removeProduct(product) {
+        const index = this.products.indexOf(product);
+        if(index > -1) {
+            this.products.splice(index, 1);
+            this.total -= product.price;
+        }
+    }
+    startService() {
+        const customerName = prompt("Qual é o seu nome?");
+        console.log(`Bem-vindo, ${customerName}`);
+    }
+}
 
-console.log(carrinho);
+const register = new CashRegister();
 
-carrinho.addItem({codigoBarras: 65486, nome: "Banana", preco: 5, qtd: 5});
+register.startService();
 
-carrinho.removeItem();
+const apple = new Product("Maçã", 2.50);
+const banana = new Product("Banana", 1.50);
+const laranja = new Product("Laranja", 2.00);
 
-console.log(carrinho);
+register.addProduct(apple);
+register.addProduct(banana);
+register.addProduct(laranja);
+
+console.log(register);
+
+
+console.log(`Total da conta: R$${register.total.toFixed(2)}`);
