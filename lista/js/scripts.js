@@ -22,4 +22,4 @@ function trocarPosicao(inicial, final) {
     console.log(novaLista);
 }
 
-trocarPosicao(-1, 2);
+trocarPosicao(0, 2);
