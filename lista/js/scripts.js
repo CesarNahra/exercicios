@@ -3,6 +3,10 @@ function trocarPosicao(inicial, final) {
 
     const novaLista = [];
 
+    if(inicial < 0 || final < 0) {
+        console.log("Não pode enviar");
+    }
+
     for(let i = 0; i < lista.length; i++) {
         if(i === inicial) {
             novaLista.push(lista[final]);
@@ -18,4 +22,4 @@ function trocarPosicao(inicial, final) {
     console.log(novaLista);
 }
 
-trocarPosicao(0, 2);
+trocarPosicao(-1, 2);
