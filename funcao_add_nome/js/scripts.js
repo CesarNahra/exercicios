@@ -2,8 +2,10 @@ function addName(nome) {
     let arr = ['Pedro', 'Aderbal', 'Danilo', 'Luisa', 'Vitoria'];
 
     for(let i = 0; i < arr.length; i++) {
-        if(nome == arr[i] || typeof nome !== 'string') {
-            throw new Error("Aconteceu um erro");
+        if(typeof nome !== 'string') {
+            throw new Error(`O valor ${nome} não é uma string`);
+        } else if(nome == arr[i]) {
+            throw new Error(`O nome ${nome} já se encontra na lista`);
         }
     }
 
@@ -12,4 +14,4 @@ function addName(nome) {
 
 }
 
-addName('César');
+addName(4);
